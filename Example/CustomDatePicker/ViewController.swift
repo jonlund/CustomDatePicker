@@ -20,6 +20,7 @@ class ViewController: UIViewController {
 		tf.inputAssistantItem.leadingBarButtonGroups = []
 		tf.inputAssistantItem.trailingBarButtonGroups = [picker.shortcuts]
 		picker.delegate = self
+		tf.becomeFirstResponder()
 	}
 	
 }

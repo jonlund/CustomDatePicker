@@ -25,7 +25,6 @@
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		708372C87F2A2027F8EAD100 /* Pods-CustomDatePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomDatePicker_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CustomDatePicker_Tests/Pods-CustomDatePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7E3D4177D81EC284A8F3CAAF /* Pods-CustomDatePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomDatePicker_Example.debug.xcconfig"; path = "Target Support Files/Pods-CustomDatePicker_Example/Pods-CustomDatePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8F5CAB6D4C7B2ECF9F2D38C3 /* Pods_CustomDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +33,7 @@
 		BD879B9A03917D3CBAD562FE /* Pods-CustomDatePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomDatePicker_Tests.release.xcconfig"; path = "Target Support Files/Pods-CustomDatePicker_Tests/Pods-CustomDatePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C3EAE86F1E2B536C86B02993 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E513A670115E53336A6E8234 /* Pods-CustomDatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomDatePicker_Example.release.xcconfig"; path = "Target Support Files/Pods-CustomDatePicker_Example/Pods-CustomDatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FC8EB4302334135200837190 /* CustomDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CustomDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +51,7 @@
 		41CB847F352233F580D4603A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC8EB4302334135200837190 /* CustomDatePicker.framework */,
 				8F5CAB6D4C7B2ECF9F2D38C3 /* Pods_CustomDatePicker_Example.framework */,
 				A6AEA78DB27B3053022D5B71 /* Pods_CustomDatePicker_Tests.framework */,
 			);
@@ -113,7 +114,6 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -328,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -374,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -396,6 +396,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -413,6 +414,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
