@@ -1,0 +1,24 @@
+{
+  "name": "CustomDatePicker",
+  "version": "0.1.0",
+  "summary": "A Customizable version of UIDatePicker.",
+  "description": "The CustomerDatePicker intends to replicate the functionality of the\nnative UIDatePicker but add the ability to customize the font, look,\nand feel. Originally it was created to make the font bigger and there\nappeared to be no other [good] way to accomplish that.",
+  "homepage": "https://github.com/jonlund/CustomDatePicker",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jonathan Lund": "jon.lund@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jonlund/CustomDatePicker.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "CustomDatePicker/Classes/**/*",
+  "swift_version": "5.0"
+}
