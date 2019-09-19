@@ -7,18 +7,33 @@
 //
 
 import UIKit
+import CustomDatePicker
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+	
+	@IBOutlet var tf: UITextField!
+	@IBOutlet var picker: CustomDatePicker!
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		tf.inputView = picker
+		tf.inputAssistantItem.leadingBarButtonGroups = []
+		tf.inputAssistantItem.trailingBarButtonGroups = [picker.shortcuts]
+		picker.delegate = self
+	}
+	
 }
+
+extension ViewController: CustomDatePickerDelegate {
+	func pickerView(_ pickerView: CustomDatePicker, changedDate: Date) {
+		tf.text = Int(changedDate.timeIntervalSince1970).description
+	}
+	
+	func pickerViewDidFinish(_ pickerView: CustomDatePicker) {
+		tf.resignFirstResponder()
+	}
+	
+	
+}
+
 

@@ -18,17 +18,21 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+The CustomerDatePicker intends to replicate the functionality of the
+native UIDatePicker but add the ability to customize the font, look,
+and feel. Originally it was created to make the font bigger and there
+appeared to be no other [good] way to accomplish that.
                        DESC
 
   s.homepage         = 'https://github.com/jonlund/CustomDatePicker'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'jonlund' => 'jon.lund@gmail.com' }
+  s.author           = { 'Jonathan Lund' => 'jon.lund@gmail.com' }
   s.source           = { :git => 'https://github.com/jonlund/CustomDatePicker.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+	s.swift_versions = "5.0"
 
   s.source_files = 'CustomDatePicker/Classes/**/*'
   
