@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CustomDatePicker_Example' do
+  pod 'CustomDatePicker', :path => '../'
+
+  target 'CustomDatePicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
